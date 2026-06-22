@@ -1,0 +1,80 @@
+.myprojects-container {
+    min-height: 100vh;
+    padding: 40px;
+    background: linear-gradient(
+       135deg,
+        #0f172a,
+        #1e293b,
+        #312e81
+    );
+}
+
+.myprojects-title {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.project-card {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25;
+    border-radius: 20px;
+    background: rgba( 255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba( 255, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-title {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    color:#d1d5db;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.project-skills {
+    color: #60a5fa;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.project-actions {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.edit-btn ,
+.dlt-btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.dlt-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.edit-btn:hover ,
+.dlt-btn:hover {
+    transform: scale(1.05);
+}

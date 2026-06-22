@@ -1,0 +1,82 @@
+.profile-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.profile-card{
+    width:100%;
+    max-width:700px;
+    padding:40px;
+    border-radius:25px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    text-align:center;
+    box-shadow:0 0 30px rgba(59,130,246,0.2);
+}
+
+.profile-avatar{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    background:#3b82f6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    font-weight:bold;
+    margin:0 auto 20px;
+}
+
+.profile-name{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.profile-bio{
+    color:#bdbdbd;
+    margin-bottom:25px;
+}
+
+.profile-info{
+    margin-bottom:25px;
+    font-size:1.1rem;
+}
+
+.profile-skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.profile-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+.profile-btn{
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:12px;
+    background:#3b82f6;
+    color:white;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:0.3s;
+}
+
+.profile-btn:hover{
+    transform:translateY(-3px);
+}
+
+.skills-title {
+    margin-bottom: 15px;
+    color: #60a5fa;
+}

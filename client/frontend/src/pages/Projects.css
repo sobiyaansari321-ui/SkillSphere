@@ -1,0 +1,128 @@
+.projects-container {
+    min-height: 100vh;
+    padding: 40px;
+    background: linear-gradient(
+        135deg,
+        #0f172a
+        #1e293b,
+        #312e81
+    );
+}
+
+.projects-title {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 40px;
+}
+
+.search-input {
+    width: 350px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    transform: translateY(-3px);
+}
+
+.project-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    color: white;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(59,130,246,0.2);
+}
+
+.projects-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.project-description {
+    color: #d1d5db;
+    margin-bottom: 15px;
+}
+
+.project-skills {
+    color: #60a5fa;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.project-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.details-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #06b6d4
+    );
+    transition: 0.3s;
+}
+
+.request-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+        );
+    transition: 0.3s;
+}
+
+.details-btn:hover
+.request-btn:hover {
+    transform: scale(1.05);
+}

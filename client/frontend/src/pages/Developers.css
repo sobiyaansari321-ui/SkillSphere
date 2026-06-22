@@ -1,0 +1,121 @@
+.developers-page {
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.developers-title {
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.search-input {
+    width: 350px;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #3b82f6
+    );
+    color: white;
+    font-weight: bold;
+}
+
+.developers-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.developers-card {
+    background: rgba( 255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba( 255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.developers-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba( 59, 130, 246, 0.4);
+}
+
+.developers-name {
+    color: #bedbff;
+    margin-bottom: 15px;
+}
+
+.developers-email {
+    margin-bottom: 10px;
+}
+
+.developers-skills {
+    color: #cbd5e1;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.skill-badge {
+    background:rgba( 59, 130, 246, 0.2);
+    color: white;
+    border: 1px solid rgba( 59, 130, 246, 0.4);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.view-profile-btn {
+    width: 60%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #3b82f6
+    );
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
