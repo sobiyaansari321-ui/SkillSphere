@@ -10,12 +10,16 @@ const Login = () => {
     const [ email , setEmail ] = useState("")
     const [ password , setPassword ] = useState("")
     const [ showPassword , setShowPassword ] = useState(false)
+    const [ error , setError ] = useState("")
 
     const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+
+            setError("")
+
             const response = await api.post("/users/login",{
                 email,
                 password,
@@ -28,11 +32,11 @@ const Login = () => {
 
             navigate("/dashboard")
 
-            console.log(response.data)
+            // console.log(response.data)
         }
 
         catch (error) {
-            console.log(error.response.data)
+            setError(error?.response?.data?.message || "Login Failed")
         }
     }
   return (
@@ -54,6 +58,10 @@ const Login = () => {
         onSubmit={handleSubmit}>
 
         <h1 className='login-title'>Login</h1>
+
+        {error && <p className='error-message'>
+            {error}
+            </p>}
 
             <input 
             className='login-input'
@@ -85,7 +93,6 @@ const Login = () => {
 
              <button 
              className='login-btn'
-             onClick={handleSubmit}
              type="submit">
                 Login
              </button>

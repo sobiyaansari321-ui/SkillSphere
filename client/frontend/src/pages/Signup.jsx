@@ -11,6 +11,7 @@ const Signup = () => {
     const [ email , setEmail ] = useState("")
     const [ password , setPassword ] = useState("")
     const [ showPassword , setShowPassword ] = useState(false)
+    const [ error , setError ] = useState("")
 
     const navigate = useNavigate()
 
@@ -18,6 +19,7 @@ const Signup = () => {
         e.preventDefault();
 
         try {
+            setError("")
             const response = await api.post("/users/signup",{
                 name,email,password,
             });
@@ -28,7 +30,9 @@ const Signup = () => {
         }
 
         catch (error) {
-            console.log(error.response.data)
+            setError(
+                error?.response?.data?.message || "Signup failed"
+            )
         }
     }
   return (
@@ -48,6 +52,10 @@ const Signup = () => {
         <form className='signup-form' onSubmit={handleSubmit}>
 
         <h1 className='signup-title'>Signup</h1>
+
+        {error && <p className='error-message'>
+            {error}
+            </p>}
 
             <input className='signup-input'
             type="text"
