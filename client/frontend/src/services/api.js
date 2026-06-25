@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL:"http://localhost:8080/api"
+    baseURL:"https://skillsphere-1-70jc.onrender.com/api"
 })
 
 export default api
