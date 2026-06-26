@@ -5,7 +5,7 @@ import connectDB from './config/db.js'
 import userRoutes from './routes/userRoutes.js'
 import projectRoutes from './routes/projectRoutes.js'
 import requestRoutes from './routes/requestRoutes.js'
-
+import messageRoutes from './routes/messageRoutes.js'
 
 dotenv.config()
 
@@ -23,6 +23,7 @@ app.get( '/' , (req,res)=>{
 app.use("/api/users", userRoutes );
 app.use("/api/projects", projectRoutes );
 app.use("/api/requests", requestRoutes);
+app.use("/api/messages" , messageRoutes )
 
 const PORT = process.env.PORT || 5000 ;
 const HOST = 'localhost' ;

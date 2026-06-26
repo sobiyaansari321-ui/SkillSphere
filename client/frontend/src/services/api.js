@@ -5,3 +5,6 @@ const api = axios.create({
 })
 
 export default api
+
+// deploy wla url:
+// https://skillsphere-1-70jc.onrender.com/api

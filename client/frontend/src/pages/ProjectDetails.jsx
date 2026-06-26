@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState , useEffect } from "react"
 import api from "../services/api.js"
+import ChatBox from "../components/ChatBox.jsx"
 import './ProjectDetails.css'
 
 const ProjectDetails = () => {
@@ -69,6 +70,8 @@ const ProjectDetails = () => {
           ))
         )
       }
+
+      <ChatBox projectId={project._id}/>
 
     </div>
   )
